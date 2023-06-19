@@ -6,14 +6,14 @@ pipeline{
     environment {
     	AWS_ACCESS_KEY_ID = 
     	AWS_SECRET_ACCESS_KEY = 
-    	AWS_REGION = 'ap-southeast-1'
+    	AWS_REGION = 'us-east-2'
     	TF_FOLDER = '/var/lib/jenkins/workspace/terraform-ansible-prov-conf/Deliverables/vpc_ec2_terraform/'
     	ANS_FOLDER = '/var/lib/jenkins/workspace/terraform-ansible-prov-conf/Deliverables/ansible-plays/'
     }
     stages{
         stage('Git checkout'){
             steps{
-                git url: 'https://github.com/debasis-gif/spring-framework-petclinic.git'
+                git url: 'https://github.com/MoshicoBusinessCloud/spring-framework-petclinic.git'
             }
         }
         stage('Terraform - Env Variables Access & Secret Keys:'){
