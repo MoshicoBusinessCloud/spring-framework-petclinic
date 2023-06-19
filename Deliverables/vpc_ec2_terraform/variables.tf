@@ -1,6 +1,6 @@
 variable "region"  {
    type = string
-   default = "ap-southeast-1"
+   default = "us-east-2"
 }
 
 
@@ -19,7 +19,7 @@ variable "environment" {
 
 variable "availability_zones" {
       type  = list(string)
-      default = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
+      default = ["us-east-2a", "us-east-2b", "us-east-2c"]
 }
 
 variable "public_subnets_cidr" {
@@ -50,7 +50,7 @@ variable "redshift_subnets_cidr" {
 
 variable "ami_id" {
    type = string
-   default = "ami-0df7a207adb9748c7" 
+   default = "ami-024e6efaf93d85776" 
    # default = "ami-0a72af05d27b49ccb" 
 }
 
